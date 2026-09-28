@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ryan Li</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="hero">
+    <h1>Ryan Li</h1>
+    <p class="tagline">[One-line description of you goes here — e.g. "Data analyst learning to build things."]</p>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>[A few sentences about yourself: what you do, what you're curious about, what brought you to try coding.]</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Project One</h3>
+          <p>[Short description of a project — can be "coming soon" for now.]</p>
+        </div>
+        <div class="project-card">
+          <h3>Project Two</h3>
+          <p>[Short description of a project — can be "coming soon" for now.]</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="widget">
+      <h2>Live Widget</h2>
+      <label for="city-select" class="widget-label">City:</label>
+      <select id="city-select">
+        <option value="sydney">Sydney, Australia</option>
+        <option value="nyc">New York City</option>
+        <option value="sf">San Francisco</option>
+        <option value="xian">Xi'an, China</option>
+      </select>
+      <div id="widget-content" class="widget-box">
+        <p>Loading live data…</p>
+      </div>
+    </section>
+
+    <section id="guestbook">
+      <h2>Guestbook</h2>
+      <form id="guestbook-form">
+        <input type="text" id="guest-name" placeholder="Your name" required />
+        <input type="text" id="guest-message" placeholder="Leave a short message" required maxlength="200" />
+        <button type="submit">Sign Guestbook</button>
+      </form>
+      <ul id="guestbook-list"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built by Ryan Li — August 2026</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
